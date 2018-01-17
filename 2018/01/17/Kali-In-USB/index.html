@@ -12,7 +12,7 @@
     
     <title>
         
-            逆向之旅-----找main函数 | 
+            U盘里的Kali | 
         
         invisible
     </title>
@@ -65,18 +65,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://InvisibleLeVen.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="逆向之旅-----找main函数 | invisible">
+    <meta property="og:title" content="U盘里的Kali | invisible">
     <meta property="og:image" content="/img/favicon.png" />
     <meta property="og:description" content="">
     
 
     
-        <meta property="article:published_time" content="Jan 12, 2018" />
-        <meta property="article:modified_time" content="Jan 12, 2018" />
+        <meta property="article:published_time" content="Jan 17, 2018" />
+        <meta property="article:modified_time" content="Jan 17, 2018" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="逆向之旅-----找main函数 | invisible">
+    <meta name="twitter:title" content="U盘里的Kali | invisible">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -84,7 +84,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://InvisibleLeVen.github.io/2018/01/12/hello-world/index.html" />
+        <link rel="canonical" href="https://InvisibleLeVen.github.io/2018/01/17/Kali-In-USB/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -110,10 +110,10 @@
         },
         "description": "Success is going from failure to failure without losing enthusiasm"
     },
-    "headline": "逆向之旅-----找main函数",
-    "url": "https://InvisibleLeVen.github.io/2018/01/12/hello-world/index.html",
-    "datePublished": "Jan 12, 2018",
-    "dateModified": "Jan 12, 2018",
+    "headline": "U盘里的Kali",
+    "url": "https://InvisibleLeVen.github.io/2018/01/17/Kali-In-USB/index.html",
+    "datePublished": "Jan 17, 2018",
+    "dateModified": "Jan 17, 2018",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
@@ -368,7 +368,7 @@
         
     
             <p class="article-headline-p">
-                逆向之旅-----找main函数
+                U盘里的Kali
             </p>
         </div>
 
@@ -387,7 +387,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>invisible</strong>
-        <span>Jan 12, 2018</span>
+        <span>Jan 17, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -427,7 +427,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=逆向之旅-----找main函数&url=https://InvisibleLeVen.github.io/2018/01/12/hello-world/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=U盘里的Kali&url=https://InvisibleLeVen.github.io/2018/01/17/Kali-In-USB/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 Share to Weibo
             </li>
@@ -436,7 +436,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=逆向之旅-----找main函数&url=https://InvisibleLeVen.github.io/2018/01/12/hello-world/index.html&via=invisible" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=U盘里的Kali&url=https://InvisibleLeVen.github.io/2018/01/17/Kali-In-USB/index.html&via=invisible" target="_blank">
             <li class="mdl-menu__item">
                 Share to Twitter
             </li>
@@ -445,7 +445,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://InvisibleLeVen.github.io/2018/01/12/hello-world/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://InvisibleLeVen.github.io/2018/01/17/Kali-In-USB/index.html" target="_blank">
             <li class="mdl-menu__item">
                 Share to Facebook
             </li>
@@ -454,7 +454,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://InvisibleLeVen.github.io/2018/01/12/hello-world/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://InvisibleLeVen.github.io/2018/01/17/Kali-In-USB/index.html" target="_blank">
             <li class="mdl-menu__item">
                 Share to Google+
             </li>
@@ -478,16 +478,7 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>emm.首先看了一篇博客，找main函数的地址，那篇博客里的ida的start函数里直接是很多<br>初始化环境啊..GetCommandLine和和GetEnvironmentStringsA之类的<br>然后下面就直接调用main了，wa。。。。好容易啊可能是VC或者gcc编译出来的吧<br>代码如下<br>void __cdecl start()<br>{<br>  DWORD v0; // eax@1<br>  int v1; // eax@4</p>
-<p>  v0 = GetVersion();<br>  dword_4101A4 = BYTE1(v0);<br>  dword_4101A0 = v0;<br>  dword_41019C = BYTE1(v0) + (v0 &lt;&lt; 8);<br>  dword_410198 = v0 &gt;&gt; 16;<br>  if ( !sub_4068EE(0) )<br>    fast_error_exit(0x1Cu);<br>  _ioinit();<br>  dword_411704 = <em>GetCommandLineA</em>();<br>  dword_41017C = __crtGetEnvironmentStringsA();<br>  _setargv();<br>  _setenvp();<br>  _cinit();<br>  dword_4101B8 = envp;<br>  v1 = main(argc, argv, envp);<br>  exit(v1);<br>}<br>容易吧，都是显而易见的东西，然而我用的是vs2015…<br>光栈回溯就起码有5个函数之多<br>于是我把一个简单的helloworld程序放在ida里分析，是这样的<br>int start()<br>{<br>  return start_0();<br>}<br>天壤之别啊…然后我继续跟进<br>int start_0()<br>{<br>  return sub_411C20();<br>}<br>然后又调用了一个函数，接着跟<br>int sub_411C20()<br>{<br>  sub_4111F4();<br>  return sub_411C40();<br>}<br>出现了两个分支，首先点开第一个分支<br>unsigned int sub_4111F4(void)<br>{<br>  return sub_413230();<br>}<br>继续<br>unsigned int sub_413230()<br>{<br>  unsigned int result; // eax@2<br>  LARGE_INTEGER PerformanceCount; // [sp+0h] [bp-14h]@4<br>  struct _FILETIME SystemTimeAsFileTime; // [sp+8h] [bp-Ch]@1<br>  DWORD v3; // [sp+10h] [bp-4h]@4</p>
-<p>  SystemTimeAsFileTime.dwLowDateTime = 0;<br>  SystemTimeAsFileTime.dwHighDateTime = 0;<br>  if ( <strong>security_cookie != -1153374642 &amp;&amp; (result = </strong>security_cookie &amp; 0xFFFF0000) != 0 )<br>  {<br>    dword_418024 = ~<strong>security_cookie;<br>  }<br>  else<br>  {<br>    GetSystemTimeAsFileTime(&amp;SystemTimeAsFileTime);<br>    v3 = SystemTimeAsFileTime.dwHighDateTime ^ SystemTimeAsFileTime.dwLowDateTime;<br>    v3 ^= GetCurrentThreadId();<br>    v3 ^= GetCurrentProcessId();<br>    QueryPerformanceCounter(&amp;PerformanceCount);<br>    v3 ^= PerformanceCount.LowPart;<br>    v3 ^= PerformanceCount.HighPart;<br>    v3 ^= (unsigned int)&v3;<br>    if ( v3 == -1153374642 )<br>    {<br>      v3 = -1153374641;<br>    }<br>    else if ( !(v3 &amp; 0xFFFF0000) )<br>    {<br>      v3 |= (v3 | 0x4711) &lt;&lt; 16;<br>    }<br>    result = v3;
-    </strong>security_cookie = v3;<br>    dword_418024 = ~v3;<br>  }<br>  return result;<br>}<br>发现了这堆东西，大概和线程和编译器初始化还有文件时间security_cookie之类的东西有关，不管了，这里主要任务是寻找main<br>发现这里并没有出现main函数，和调用其他函数，那么main的调用一定在另一个函数里面了<br>sub_411C40<br>跟进却发现了一个问题<br>f5的时候出现sp-analysis failed 的错误…google一下。发现在ida官网有很多可能性导致这种情况的产生..<br>至少20种以上吧…<br>地址是<a href="https://www.hex-rays.com/products/decompiler/manual/failures.shtml" target="_blank" rel="noopener">https://www.hex-rays.com/products/decompiler/manual/failures.shtml</a><br>猜测可能是微软开发人员想增加逆向工作者的难度故意写了一些骚操作吧..<br>不能f5那么我们只能去看汇编指令寻找main了<br>首先找到那个sub_411C40这个函数的地址，ida自带有字符串搜索功能—在ida右上角<br>.text:00411C40<br>.text:00411C40 ; =============== S U B R O U T I N E =======================================<br>.text:00411C40<br>.text:00411C40 ; Attributes: bp-based frame<br>.text:00411C40<br>.text:00411C40 sub_411C40      proc near               ; CODE XREF: sub_411C20+8p<br>.text:00411C40<br>.text:00411C40 var_40          = dword ptr -40h<br>.text:00411C40 var_3C          = dword ptr -3Ch<br>.text:00411C40 var_38          = dword ptr -38h<br>.text:00411C40 var_34          = dword ptr -34h<br>.text:00411C40 var_30          = dword ptr -30h<br>.text:00411C40 Code            = dword ptr -2Ch<br>.text:00411C40 var_28          = dword ptr -28h<br>.text:00411C40 var_24          = dword ptr -24h<br>.text:00411C40 var_20          = dword ptr -20h<br>.text:00411C40 var_1A          = byte ptr -1Ah<br>.text:00411C40 var_19          = byte ptr -19h<br>.text:00411C40 ms_exc          = CPPEH_RECORD ptr -18h<br>.text:00411C40<br>.text:00411C40                 push    ebp             ; 这个函数做初始化工作，下面调用一个函数，得到环境变量和参数<br>.text:00411C41                 mov     ebp, esp<br>.text:00411C43                 push    0FFFFFFFEh<br>.text:00411C45                 push    offset stru_417E48<br>.text:00411C4A                 push    offset sub_413900<br>.text:00411C4F                 mov     eax, large fs:0<br>.text:00411C55                 push    eax<br>.text:00411C56                 add     esp, 0FFFFFFD0h<br>.text:00411C59                 push    ebx<br>.text:00411C5A                 push    esi<br>.text:00411C5B                 push    edi<br>.text:00411C5C                 mov     eax, <strong>_security_cookie<br>.text:00411C61                 xor     [ebp+ms_exc.registration.ScopeTable], eax<br>.text:00411C64                 xor     eax, ebp<br>.text:00411C66                 push    eax<br>.text:00411C67                 lea     eax, [ebp+ms_exc.registration]<br>.text:00411C6A                 mov     large fs:0, eax<br>.text:00411C70                 mov     [ebp+ms_exc.old_esp], esp<br>.text:00411C73                 push    1<br>.text:00411C75                 call    sub_41127B<br>.text:00411C7A                 add     esp, 4<br>.text:00411C7D                 movzx   eax, al<br>.text:00411C80                 test    eax, eax<br>.text:00411C82                 jnz     short loc_411C8B<br>.text:00411C84                 push    7<br>.text:00411C86                 call    sub_41105A<br>.text:00411C8B<br>.text:00411C8B loc_411C8B:                             ; CODE XREF: sub_411C40+42j<br>.text:00411C8B                 mov     [ebp+var_19], 0<br>.text:00411C8F                 mov     [ebp+ms_exc.registration.TryLevel], 0<br>.text:00411C96                 call    sub_41130C<br>.text:00411C9B                 mov     [ebp+var_1A], al<br>.text:00411C9E                 cmp     dword_418160, 1<br>.text:00411CA5                 jnz     short loc_411CB0<br>.text:00411CA7                 push    7<br>.text:00411CA9                 call    sub_41105A<br>.text:00411CAE                 jmp     short loc_411D11<br>.text:00411CB0 ; —————————————————————————<br>.text:00411CB0<br>.text:00411CB0 loc_411CB0:                             ; CODE XREF: sub_411C40+65j<br>.text:00411CB0                 cmp     dword_418160, 0<br>.text:00411CB7                 jnz     short loc_411D0D<br>.text:00411CB9                 mov     dword_418160, 1<br>.text:00411CC3                 push    offset unk_416618<br>.text:00411CC8                 push    offset unk_41630C<br>.text:00411CCD                 call    j</strong>initterm_e<br>.text:00411CD2                 add     esp, 8<br>.text:00411CD5                 test    eax, eax<br>.text:00411CD7                 jz      short loc_411CEF<br>.text:00411CD9                 mov     [ebp+var_38], 0FFh<br>.text:00411CE0                 mov     [ebp+ms_exc.registration.TryLevel], 0FFFFFFFEh<br>.text:00411CE7                 mov     eax, [ebp+var_38]<br>.text:00411CEA                 jmp     loc_411E3B<br>.text:00411CEF ; —————————————————————————<br>.text:00411CEF<br>.text:00411CEF loc_411CEF:                             ; CODE XREF: sub_411C40+97j<br>.text:00411CEF                 push    offset unk_416208<br>.text:00411CF4                 push    offset unk_416000<br>.text:00411CF9                 call    j<strong>initterm<br>.text:00411CFE                 add     esp, 8<br>.text:00411D01                 mov     dword_418160, 2<br>.text:00411D0B                 jmp     short loc_411D11<br>.text:00411D0D ; —————————————————————————<br>.text:00411D0D<br>.text:00411D0D loc_411D0D:                             ; CODE XREF: sub_411C40+77j<br>.text:00411D0D                 mov     [ebp+var_19], 1<br>.text:00411D11<br>.text:00411D11 loc_411D11:                             ; CODE XREF: sub_411C40+6Ej<br>.text:00411D11                                         ; sub_411C40+CBj<br>.text:00411D11                 movzx   ecx, [ebp+var_1A]<br>.text:00411D15                 push    ecx<br>.text:00411D16                 call    sub_411302<br>.text:00411D1B                 add     esp, 4<br>.text:00411D1E                 call    sub_411271<br>.text:00411D23                 mov     [ebp+var_20], eax<br>.text:00411D26                 mov     edx, [ebp+var_20]<br>.text:00411D29                 cmp     dword ptr [edx], 0<br>.text:00411D2C                 jz      short loc_411D5A<br>.text:00411D2E                 mov     eax, [ebp+var_20]<br>.text:00411D31                 push    eax<br>.text:00411D32                 call    sub_411348<br>.text:00411D37                 add     esp, 4<br>.text:00411D3A                 movzx   ecx, al<br>.text:00411D3D                 test    ecx, ecx<br>.text:00411D3F                 jz      short loc_411D5A<br>.text:00411D41                 push    0<br>.text:00411D43                 push    2<br>.text:00411D45                 push    0<br>.text:00411D47                 mov     edx, [ebp+var_20]<br>.text:00411D4A                 mov     eax, [edx]<br>.text:00411D4C                 mov     [ebp+var_28], eax<br>.text:00411D4F                 mov     ecx, [ebp+var_28]<br>.text:00411D52                 call    sub_4112BC<br>.text:00411D57                 call    [ebp+var_28]<br>.text:00411D5A<br>.text:00411D5A loc_411D5A:                             ; CODE XREF: sub_411C40+ECj<br>.text:00411D5A                                         ; sub_411C40+FFj<br>.text:00411D5A                 call    sub_4110C3<br>.text:00411D5F                 mov     [ebp+var_24], eax<br>.text:00411D62                 mov     ecx, [ebp+var_24]<br>.text:00411D65                 cmp     dword ptr [ecx], 0<br>.text:00411D68                 jz      short loc_411D8B<br>.text:00411D6A                 mov     edx, [ebp+var_24]<br>.text:00411D6D                 push    edx<br>.text:00411D6E                 call    sub_411348<br>.text:00411D73                 add     esp, 4<br>.text:00411D76                 movzx   eax, al<br>.text:00411D79                 test    eax, eax<br>.text:00411D7B                 jz      short loc_411D8B<br>.text:00411D7D                 mov     ecx, [ebp+var_24]<br>.text:00411D80                 mov     edx, [ecx]<br>.text:00411D82                 push    edx<br>.text:00411D83                 call    j</strong>register_thread_local_exe_atexit_callback<br>.text:00411D88                 add     esp, 4<br>.text:00411D8B<br>.text:00411D8B loc_411D8B:                             ; CODE XREF: sub_411C40+128j<br>.text:00411D8B                                         ; sub_411C40+13Bj<br>.text:00411D8B                 call    sub_411F10      ; <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><em>**</em></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>mark<br>.text:00411D90                 mov     [ebp+Code], eax<br>.text:00411D93                 call    sub_41111D<br>.text:00411D98                 movzx   eax, al<br>.text:00411D9B                 test    eax, eax<br>.text:00411D9D                 jnz     short loc_411DA8<br>.text:00411D9F                 mov     ecx, [ebp+Code]<br>.text:00411DA2                 push    ecx             ; Code<br>.text:00411DA3                 call    j_exit<br>.text:00411DA8 ; —————————————————————————<br>.text:00411DA8<br>.text:00411DA8 loc_411DA8:                             ; CODE XREF: sub_411C40+15Dj<br>.text:00411DA8                 movzx   edx, [ebp+var_19]<br>.text:00411DAC                 test    edx, edx<br>.text:00411DAE                 jnz     short loc_411DB5<br>.text:00411DB0                 call    j<strong>cexit<br>.text:00411DB5<br>.text:00411DB5 loc_411DB5:                             ; CODE XREF: sub_411C40+16Ej<br>.text:00411DB5                 push    0<br>.text:00411DB7                 push    1<br>.text:00411DB9                 call    sub_411159<br>.text:00411DBE                 add     esp, 8<br>.text:00411DC1                 mov     eax, [ebp+Code]<br>.text:00411DC4                 mov     [ebp+var_3C], eax<br>.text:00411DC7                 mov     [ebp+ms_exc.registration.TryLevel], 0FFFFFFFEh<br>.text:00411DCE                 mov     eax, [ebp+var_3C]<br>.text:00411DD1                 jmp     short loc_411E3B<br>.text:00411DD3 ; —————————————————————————<br>.text:00411DD3                 mov     [ebp+ms_exc.registration.TryLevel], 0FFFFFFFEh<br>.text:00411DDA                 jmp     short loc_411E3B<br>.text:00411DDC ; —————————————————————————<br>.text:00411DDC<br>.text:00411DDC loc_411DDC:                             ; DATA XREF: .rdata:stru_417E48o<br>.text:00411DDC                 mov     ecx, [ebp+ms_exc.exc_ptr] ; Exception filter 0 for function 411C40<br>.text:00411DDF                 mov     edx, [ecx]<br>.text:00411DE1                 mov     eax, [edx]<br>.text:00411DE3                 mov     [ebp+var_30], eax<br>.text:00411DE6                 mov     ecx, [ebp+ms_exc.exc_ptr]<br>.text:00411DE9                 push    ecx<br>.text:00411DEA                 mov     edx, [ebp+var_30]<br>.text:00411DED                 push    edx<br>.text:00411DEE                 call    j</strong>seh_filter_exe<br>.text:00411DF3                 add     esp, 8<br>.text:00411DF6                 retn<br>.text:00411DF7 ; —————————————————————————<br>.text:00411DF7<br>.text:00411DF7 loc_411DF7:                             ; DATA XREF: .rdata:stru_417E48o<br>.text:00411DF7                 mov     esp, [ebp+ms_exc.old_esp] ; Exception handler 0 for function 411C40<br>.text:00411DFA                 mov     eax, [ebp+var_30]<br>.text:00411DFD                 mov     [ebp+var_34], eax<br>.text:00411E00                 call    sub_41111D<br>.text:00411E05                 movzx   ecx, al<br>.text:00411E08                 test    ecx, ecx<br>.text:00411E0A                 jnz     short loc_411E15<br>.text:00411E0C                 mov     edx, [ebp+var_34]<br>.text:00411E0F                 push    edx             ; Code<br>.text:00411E10                 call    j<strong>exit<br>.text:00411E15 ; —————————————————————————<br>.text:00411E15<br>.text:00411E15 loc_411E15:                             ; CODE XREF: sub_411C40+1CAj<br>.text:00411E15                 movzx   eax, [ebp+var_19]<br>.text:00411E19                 test    eax, eax<br>.text:00411E1B                 jnz     short loc_411E22<br>.text:00411E1D                 call    j</strong>c_exit<br>.text:00411E22<br>.text:00411E22 loc_411E22:                             ; CODE XREF: sub_411C40+1DBj<br>.text:00411E22                 mov     ecx, [ebp+var_34]<br>.text:00411E25                 mov     [ebp+var_40], ecx<br>.text:00411E28                 mov     [ebp+ms_exc.registration.TryLevel], 0FFFFFFFEh<br>.text:00411E2F                 mov     eax, [ebp+var_40]<br>.text:00411E32                 jmp     short loc_411E3B<br>.text:00411E34 ; —————————————————————————<br>.text:00411E34                 mov     [ebp+ms_exc.registration.TryLevel], 0FFFFFFFEh<br>.text:00411E3B<br>.text:00411E3B loc_411E3B:                             ; CODE XREF: sub_411C40+AAj<br>.text:00411E3B                                         ; sub_411C40+191j …<br>.text:00411E3B                 mov     ecx, [ebp+ms_exc.registration.Next]<br>.text:00411E3E                 mov     large fs:0, ecx<br>.text:00411E45                 pop     ecx<br>.text:00411E46                 pop     edi<br>.text:00411E47                 pop     esi<br>.text:00411E48                 pop     ebx<br>.text:00411E49                 mov     esp, ebp<br>.text:00411E4B                 pop     ebp<br>.text:00411E4C                 retn<br>.text:00411E4C sub_411C40      endp ; sp-analysis failed<br>emm大概就是这段，，有点长，<br>如果你想从上面一路往下找call也不是不可以<br>但是我是逆着来的。首先找到ida左边那一堆函数，找到和argc和argv有关的函数<br>我们可以双击到那个函数的地址<br>.text:00414BE2 <strong>p_</strong>argc      proc near               ; CODE XREF: j<strong><em>p</em></strong>argcj<br>.text:00414BE2                 jmp     ds:<strong>imp_</strong>p<strong>_argc<br>.text:00414BE2 </strong>p<strong>_argc      endp<br>呐这是argc的，然后根据这个地址，也就是00414BE2<br>找到哪个函数调用过他–我用的是万能的搜索字符串大法<br>.text:00411F10 sub_411F10      proc near               ; CODE XREF: sub_411C40:loc_411D8Bp<br>.text:00411F10                 push    ebp<br>.text:00411F11                 mov     ebp, esp<br>.text:00411F13                 call    j</strong>get_initial_narrow_environment<br>.text:00411F18                 push    eax<br>.text:00411F19                 call    j<strong><em>p</em></strong>argv<br>.text:00411F1E                 mov     eax, [eax]<br>.text:00411F20                 push    eax<br>.text:00411F21                 call    j<strong><em>p</em></strong>argc<br>.text:00411F26                 mov     ecx, [eax]<br>.text:00411F28                 push    ecx<br>.text:00411F29                 call    sub_411294<br>.text:00411F2E                 add     esp, 0Ch<br>.text:00411F31                 pop     ebp<br>.text:00411F32                 retn<br>.text:00411F32 sub_411F10      endp<br>发现这个函数调用了argv和argc还有j__get_initial_narrow_environment<br>这个类似与GetEnvironmentStringsA的函数<br>还有三个push，那么毋庸置疑，下面那个call sub_411294就是main了<br>我们继续，找到这个函数的地址<br>.text:00411294 sub_411294      proc near               ; CODE XREF: sub_411F10+19p<br>.text:00411294                 jmp     sub_411770      ; invoke_main <strong><strong><strong><strong><strong><strong><strong><strong><strong><em>*</em></strong></strong></strong></strong></strong></strong></strong></strong></strong><br>.text:00411294 sub_411294      endp<br>发现他又调用了一个函数<br>我们继续这个函数就是main函数</p>
-<p>.text:00411770<br>.text:00411770 ; =============== S U B R O U T I N E =======================================<br>.text:00411770<br>.text:00411770 ; Attributes: bp-based frame<br>.text:00411770<br>.text:00411770 sub_411770      proc near               ; CODE XREF: sub_411294j<br>.text:00411770<br>.text:00411770 var_C0          = byte ptr -0C0h<br>.text:00411770<br>.text:00411770                 push    ebp             ; main func<strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong><em>**</em></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></strong>finally i find you<br>.text:00411771                 mov     ebp, esp<br>.text:00411773                 sub     esp, 0C0h<br>.text:00411779                 push    ebx<br>.text:0041177A                 push    esi<br>.text:0041177B                 push    edi<br>.text:0041177C                 lea     edi, [ebp+var_C0]<br>.text:00411782                 mov     ecx, 30h<br>.text:00411787                 mov     eax, 0CCCCCCCCh<br>.text:0041178C                 rep stosd<br>.text:0041178E                 push    offset aHelloWorld ; “hello world”<br>.text:00411793                 call    sub_41131B<br>.text:00411798                 add     esp, 4<br>.text:0041179B                 mov     esi, esp<br>.text:0041179D                 push    offset Command  ; “pause”<br>.text:004117A2                 call    ds:system<br>.text:004117A8                 add     esp, 4<br>.text:004117AB                 cmp     esi, esp<br>.text:004117AD                 call    sub_411113<br>.text:004117B2                 xor     eax, eax<br>.text:004117B4                 pop     edi<br>.text:004117B5                 pop     esi<br>.text:004117B6                 pop     ebx<br>.text:004117B7                 add     esp, 0C0h<br>.text:004117BD                 cmp     ebp, esp<br>.text:004117BF                 call    sub_411113<br>.text:004117C4                 mov     esp, ebp<br>.text:004117C6                 pop     ebp<br>.text:004117C7                 retn<br>.text:004117C7 sub_411770      endp<br>哈哈，输出hello world<br>其实上面那个函数调用的是invoke_main<br>通过打印出vs2015的栈回溯就知道了</p>
-<p>main   addr:  012FFB3C<br>main, d:\play\c++\c++\源.cp, line 111<br>invoke_main   addr:  012FFB40<br>invoke_main, f:\dd\vctools\crt\vcstartup\src\startup\exe_common.inl, line 64<br><strong>scrt_common_main_seh   addr:  012FFB44
-</strong>scrt_common_main_seh, f:\dd\vctools\crt\vcstartup\src\startup\exe_common.inl, line 253<br><strong>scrt_common_main   addr:  012FFB48
-</strong>scrt_common_main, f:\dd\vctools\crt\vcstartup\src\startup\exe_common.inl, line 296<br>mainCRTStartup   addr:  012FFB4C<br>mainCRTStartup, f:\dd\vctools\crt\vcstartup\src\startup\exe_main.cpp, line 17<br>BaseThreadInitThunk   addr:  012FFB50</p>
-<p>RtlGetAppContainerNamedObjectPath   addr:  012FFB54</p>
-<p>RtlGetAppContainerNamedObjectPath   addr:  012FFB58<br>至于那个之前ida识别不出来的函数也就是<br><strong>scrt_common_main_seh了<br>那么现在来理一下<br>一开始的main也就是BaseThreadInitThunk<br>start_0就是mainCRTStartup<br> sub_411C20就是</strong>scrt_common_main<br>这么一来vs2015的全部调用的函数也就一清二楚了</p>
+        <p>哈哈哈哈哈，在u盘里装kali的愿望终于完成了。本来前几个月就已经买了u盘打算装。但是奈何<br>在install system那一步的时候有个Failed to copy file from CD-ROM. Retry?蜜汁错误。解决不了<br>Google加百度发现这是个比较刁钻的错误。当时没有找到可以解决的方法，于是便作罢。想着回家用家里的<br>台式来慢慢折腾，毕竟笔记本上硬盘的数据折腾不起呀..昨天到家，休息了一天，今天尝试的时候,发现我家台式<br>的古董华硕主板在进入bios的时候识别不了USB 3.0。早知道买2.0了（。本想着放弃。但心有不甘。顺手百度了一下<br>u盘装kali的教程。发现找到了一些新方法，在VM上装，(当时在学校没有仔细看，直接在自己电脑上装的)。教程<br>链接是<a href="http://blog.51cto.com/zdzhu/1574543。网上很多类似的，然而一开始看的是用Universal-USB-installer" target="_blank" rel="noopener">http://blog.51cto.com/zdzhu/1574543。网上很多类似的，然而一开始看的是用Universal-USB-installer</a><br>直接在u盘上做镜像。然后bios启动直接安装。<br>嗯这个直接在VM上装的方法保险多了。选择硬盘的时候注意一下就好了。<br>于是便按照这个步骤一路下去。。。。。<br>等利用VM把系统成功的装在U盘里时，重启PC。设置bios。我的是dell的笔记本，直接进入bios setting设置<br>security boot 改为disable。然后再把Boot List Option改为Legacy<br>F10.开机按F2设置U盘启动。然后便进入到了grub引导界面<br>第一个是kali GNU/linux，第二个是Advanced options for kali GNU/Linux.<br>直接选择第一个。遇到了Target filesystem doesn’t have requested /sbin/init错误<br>如图：<br><img src="http://i4.bvimg.com/628389/706bd3c097616355.png"><br>=-=一脸懵逼，就知道没那么顺利的让我装上kali。百度一下。看到了有前辈遇到了跟我类似的问题，hahaha。有救了<br><a href="http://www.th7.cn/system/lin/201707/220293.shtml看的就是这篇博客" target="_blank" rel="noopener">http://www.th7.cn/system/lin/201707/220293.shtml看的就是这篇博客</a><br>大概导致这样的原因就是，linux中硬盘名称分配是按照/dev/sda、/dev/sdb之类的序号分配。有三种情况可能导致<br>分配的序号发生变化。无法启动系统。通过uuid来标记磁盘。则不会发生这种错误，下面要做的也就是这个<br>按照博客所描述的。在initramfs模式下输入blkid查看所列举出的磁盘，找到U盘系统TYPE=’ext4’的区<br>记下前面分区<br><img src="http://i4.bvimg.com/628389/a10095a37328ad92.png"><br>重启系统，进入grub后。找到linux 后…../dev/sda1 ro的地方改成你的分区名字 rw ,ro<br>按F10重启。按道理来说应该就可以进入系统，大功告成。但是..我按照下面做了以后发现是这样的：<br><img src="http://i4.bvimg.com/628389/b540195aa94177b7.png"><br>于是便google了一下，发现也有一些类似的问题<br><img src="http://i4.bvimg.com/628389/6b99b03f3b123724.png"><br>在评论区看到了令人高兴的回答。有相应的解决方案<br>I think I solved the problem by adding nouveau.modeset=0 to the kernel parameters. The error messages at boot are gone, and I can execute lspci without my laptop crashing.<br>内核参数。查了一下nouveau是一个linux下针对于NVIDA的第三方显卡驱动。所以这里的错误应该是没有合适的显卡驱动造成的<br>那么先加那个内核参数忽略nouveau驱动。便可进入kali。然后再<br>sudo add-apt-repository ppa:graphics-drivers/ppa<br>sudo apt-get update<br>sudo apt-get install nvidia-361<br>加不加那个内核参数便无所谓了。</p>
 
     
 
@@ -507,19 +498,19 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2018/01/17/Kali-In-USB/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Newer
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
+    
+        <a href="/2018/01/12/hello-world/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
     
 </nav>
 
